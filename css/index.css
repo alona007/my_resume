@@ -1,0 +1,397 @@
+:root{
+    --text-color: #737373;
+    --second-color: #fff;
+    --highlight-color: #e6d924;
+}
+
+body{
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent 0 solid;
+}
+
+p{
+    margin: 0;
+}
+
+.link{
+    text-decoration: none;
+}
+
+h2{
+    position: relative;
+    color: #000;
+    font-size: 20px;
+}
+
+h2::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000;
+}
+
+h3{
+    position: relative;
+    font-size: 20px;
+}
+
+h3::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #fff;
+}
+
+h4{
+    font-size: 16px;
+}
+
+.all-info{
+    display: flex;
+}
+
+.left-info{
+    background-color: #3a3343;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.text-left-info{
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.list-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.svg-contacts{
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.item-contacts{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+}
+
+.item-contacts:hover .p-contacts,
+.item-contacts:focus .p-contacts,
+.item-contacts:hover .svg-contacts,
+.item-contacts:focus .svg-contacts,
+.item-contacts:hover .svg-contacts-second,
+.item-contacts:focus .svg-contacts-second{
+    color: var(--highlight-color);
+    fill: var(--highlight-color);
+}
+
+.p-contacts{
+    color: var(--second-color);
+    margin: 0 0 0 5px;
+}
+
+.mail{
+    margin-right: 5px;
+}
+
+.list-tech-skills{
+    list-style-type: disc;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-soft-skills{
+    list-style-type: disc;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-languages{
+    list-style-type: disc;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right-info{
+    margin: 0;
+    background-color: white;
+    padding: 10px 5px 20px;
+}
+
+.name{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #000;
+}
+
+.second-name{
+    font-weight: 400;
+}
+
+.position{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.p-summary{
+    text-indent: 0;
+    margin: 10px 0;
+}
+
+.stack-info{
+    margin: 0 0 10px 0;
+}
+
+.list-portfolio{
+    padding-left: 20px;
+}
+
+.h-exemple-project-experience{
+    margin: 5px 0;
+}
+
+.h-exemple-project-experience a{
+    color: var(--text-color);
+}
+
+.h-item{
+    position: relative;
+    height: 100%;
+}
+
+.h-item::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+.one-item{
+    position: relative;
+}
+
+.pp::before{
+    content: "";
+    position: absolute;
+    height: 104%;
+    width: 2px;
+    background-color: #000;
+    left: -13.5px;
+    top: 14px;
+}
+
+.p-project-experience{
+    text-indent: 0;
+    margin: 0;
+}
+
+.title-project{
+    white-space: nowrap;
+}
+
+.link-exemple-project-experience{
+    margin-left: 4px;
+}
+
+.h-exemple-work-experience{
+    margin: 5px 0;
+
+}
+
+.p-time-work-experience{
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.h-exemple-education{
+    margin: 5px 0;
+}
+
+.p-time-education{
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.span-degree{
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 500px){
+    .text-left-info{
+        padding-left: 30px;
+        font-size: 12px;
+    }
+
+    .mail{
+        margin-right: 10px;
+    }
+
+    .right-info{
+        padding: 10px 10px 20px;
+    }
+}
+
+@media (min-width: 600px){
+
+    .mail{
+        margin-right: 20px;
+    }
+
+    .right-info{
+        padding: 25px 10px 20px;
+    }
+
+    .p-summary{
+        margin: 50px 0;
+    }
+
+    .stack-info{
+        margin: 0 0 40px 0;
+    }
+}
+
+@media (min-width: 715px){
+    .photo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-left-info {
+        padding-left: 50px;
+    }
+
+    .hh{
+        display: flex;
+        gap: 4px;
+    }
+}
+
+@media (min-width: 830px) {
+    body{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    .text-left-info{
+        font-size: 14px;
+    }
+
+    .name{
+        font-size: 36px;
+    }
+
+    .position{
+        font-size: 24px;
+    }
+
+    .p-time-work-experience{
+        font-size: 16px;
+    }
+
+    .p-time-education{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1000px){
+    .right-info {
+        padding: 50px 20px 20px;
+    }
+}
+
+@media (max-width: 1046px)
+    and (min-width: 685px){
+    .pp::before{
+        height: 106%;
+    }
+}
+
+@media (max-width: 450px){
+    .photo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .text-left-info{
+        width: 150px;
+    }
+    
+    .mail{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 535px){
+    .pp::before{
+        height: 100%;
+    }
+}
